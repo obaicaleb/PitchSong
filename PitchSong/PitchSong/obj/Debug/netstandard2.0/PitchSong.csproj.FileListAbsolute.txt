@@ -1,0 +1,15 @@
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\PitchSong.csproj.AssemblyReference.cache
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\PitchSong.GeneratedMSBuildEditorConfig.editorconfig
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\PitchSong.AssemblyInfoInputs.cache
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\PitchSong.AssemblyInfo.cs
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\PitchSong.csproj.CoreCompileInputs.cache
+E:\Xamarin\PitchSong\PitchSong\PitchSong\bin\Debug\netstandard2.0\PitchSong.deps.json
+E:\Xamarin\PitchSong\PitchSong\PitchSong\bin\Debug\netstandard2.0\PitchSong.dll
+E:\Xamarin\PitchSong\PitchSong\PitchSong\bin\Debug\netstandard2.0\PitchSong.pdb
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\PitchSong.dll
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\refint\PitchSong.dll
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\PitchSong.pdb
+E:\Xamarin\PitchSong\PitchSong\PitchSong\obj\Debug\netstandard2.0\ref\PitchSong.dll
