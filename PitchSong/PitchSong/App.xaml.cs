@@ -10,7 +10,10 @@ namespace PitchSong
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.Beige
+            };
         }
 
         protected override void OnStart()

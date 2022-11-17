@@ -1,45 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:CI="clr-namespace:ImageCirlce.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
-             x:Class="PitchSong.MainPage">
+             xmlns:CI="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="PitchSong.MainPage"
+             Title="Home">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
 
-    <ListView x:Name="myListView" IsPullToRefreshEnabled="true"
-              Refreshing="myListView_Refreshing"
-              SeparatorColor="Gray" 
-              ItemSelected="myListView_ItemSelected"
-              ItemTapped="myListView_ItemTapped">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <ViewCell.ContextActions>
-                        <MenuItem Text="Delete" Clicked="MenuItem_Delete"
-                                  CommandParameter="{Binding .}"/>
-                        <MenuItem Text="Edit" Clicked="MenuItem_Edit"
-                                  CommandParameter="{Binding .}"/>
-                    </ViewCell.ContextActions>
-                    <StackLayout Orientation="Horizontal">
-                        <Image Source="{Binding ImageUrl}"
-                               HeightRequest="40"
-                               WidthRequest="40"/>
-                        <StackLayout HorizontalOptions="StartAndExpand"
-                                     Spacing="0">
-                            <Label Text="{Binding Name}"
-                                   FontSize="Medium"
-                                   TextColor="Black"
-                                   FontAttributes="Bold"/>
-                            <Label Text="{Binding Status}"/>
+    <StackLayout>
+        <Label Text="About" FontSize="10" TextColor="Purple">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="Music" FontSize="10" TextColor="Purple">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="TapGestureRecognizer_Tapped_1"/>
+            </Label.GestureRecognizers>
+        </Label>
+        
+        <SearchBar Placeholder="Search Song" TextChanged="SearchBar_TectChanged" />
+
+        <ListView x:Name="myListView" IsPullToRefreshEnabled="true"
+                    Refreshing="myListView_Refreshing"
+                    SeparatorColor="Gray" 
+                    ItemSelected="myListView_ItemSelected"
+                    ItemTapped="myListView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Delete" Clicked="MenuItem_Delete"
+                                        CommandParameter="{Binding .}"/>
+                            <MenuItem Text="Edit" Clicked="MenuItem_Edit"
+                                        CommandParameter="{Binding .}"/>
+                        </ViewCell.ContextActions>
+                        <StackLayout Orientation="Horizontal">
+                            <CI:CircleImage Source="{Binding ImageUrl}"
+                                    HeightRequest="40"
+                                    WidthRequest="40"/>
+                            <StackLayout HorizontalOptions="StartAndExpand"
+                                            Spacing="0">
+                                <Label Text="{Binding Name}"
+                                        FontSize="Medium"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Label Text="{Binding Status}"/>
+                            </StackLayout>
+                            <!--<StackLayout Orientation="Horizontal">
+                                <ImageButton Source="delete.png"
+                                                BackgroundColor="Transparent"/>
+                                <ImageButton Source="write.png"
+                                                BackgroundColor="Transparent"/>
+                            </StackLayout>-->
                         </StackLayout>
-                        <!--<StackLayout Orientation="Horizontal">
-                            <ImageButton Source="delete.png"
-                                         BackgroundColor="Transparent"/>
-                            <ImageButton Source="write.png"
-                                         BackgroundColor="Transparent"/>
-                        </StackLayout>-->
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>        
+    </StackLayout>    
 </ContentPage>
+ 
